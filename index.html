@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dairy & Glucose Adventure 🥛</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🧪 Dairy & Glucose Adventure 🥛</h1>
+            <p class="subtitle">The Mystery of Lactase and Glucose Concentration!</p>
+        </header>
+
+        <main>
+            <!-- Game Stats -->
+            <div class="stats-bar">
+                <div class="stat">
+                    <span class="stat-label">Cards Revealed:</span>
+                    <span class="stat-value" id="cardsRevealed">0</span>/<span id="totalCards">10</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Score:</span>
+                    <span class="stat-value" id="score">0</span>
+                </div>
+            </div>
+
+            <!-- Card Deck -->
+            <div class="deck-section">
+                <div class="deck" id="deck">
+                    <div class="cards-container" id="cardsContainer"></div>
+                </div>
+                <button class="shuffle-btn" id="shuffleBtn" onclick="shuffleDeck()">🔀 Shuffle Cards</button>
+            </div>
+
+            <!-- Question Display -->
+            <div class="question-display" id="questionDisplay">
+                <div class="question-placeholder">
+                    <p>Click on a card to reveal a question!</p>
+                </div>
+            </div>
+
+            <!-- Info Section -->
+            <div class="info-section">
+                <h2>📋 About This Experiment</h2>
+                <div class="info-grid">
+                    <div class="info-box">
+                        <h3>🥛 Test Subjects</h3>
+                        <ul>
+                            <li>Milk</li>
+                            <li>Cheese</li>
+                            <li>Yogurt</li>
+                        </ul>
+                    </div>
+                    <div class="info-box">
+                        <h3>🔬 The Variable</h3>
+                        <p>Lactase enzyme was added to each dairy product</p>
+                    </div>
+                    <div class="info-box">
+                        <h3>📊 What We Measured</h3>
+                        <p>Glucose concentration changes in each sample</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reset Button -->
+            <button class="reset-btn" onclick="resetGame()">↻ Start Over</button>
+        </main>
+
+        <footer>
+            <p>Made with ❤️ for Science Fair 2026</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
